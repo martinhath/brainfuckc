@@ -7,3 +7,7 @@ It's not really tested - but the example programs on the following website worke
 
 http://learnxinyminutes.com/docs/brainfuck/
 
+
+Usage
+=====
+`brainfuckc <input file>`
