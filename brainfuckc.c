@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
 
-#define MEMORY_SIZE 1024
+#define MEMORY_SIZE 30000
 #define BUFFER_SIZE 1024
 
 int main(int argc, char* argv[]){
@@ -28,7 +28,6 @@ int main(int argc, char* argv[]){
     input[i++] = c;
   }
   input[i] = '\0';
-  printf("DEBUG\t%s\n", input);
 
   i = 0;
   j = 0;
@@ -68,7 +67,7 @@ int main(int argc, char* argv[]){
                 } 
                 break;
       default:  fprintf(stderr, "%s %x\n", "Error! Illegal input", input[j]);
-                return;
+                return -1;
     }
     j++;
   }
